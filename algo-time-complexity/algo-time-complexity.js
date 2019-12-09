@@ -13,7 +13,8 @@ var TimeComplexity = {
 };
 
 
-var sortedIndexOfTimeComplexity =  TimeComplexity.; 
+var sortedIndexOfTimeComplexity =  TimeComplexity.LOGARITHMIC;
+// because it is binary search  
 
 
 var sortedIndexOf = function(array, targetElement) {
