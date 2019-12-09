@@ -38,13 +38,34 @@ var makeFlyingHorse = function(name, color) {
 // YOUR WORK GOES BELOW
 // Here's some starter code to get you going!
 // Do not use the ES6 `class` keyword; use ES5 to create your classes.
-
+// Function: Horse
 var Horse = function(name) {
+  var result = {};
+  result.name = name;
+
+  return result;
 };
 
+Horse.prototype.goSomewhere = function(destination){
+  return this.name + ' is galloping to ' + this.destination + '!';
+}
 
-
+var myHorse = new Horse();
 var FlyingHorse = function(name, color) {
+  var result = {};
+  result.name = name;
+  result.color = color;
+
+  return result;
 };
 
+FlyingHorse.prototype.goSomewhere = function(destination, milesToDestination){
+  if (this.milesToDestination < 10){
+    return goSomewhere(this.destination);
+  }
+  else{
+    return this.name + ' is flying to ' + this.destination + '!';
+  }
+}
+var myFlyingHorse = new FlyingHorse();
 
